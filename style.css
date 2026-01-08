@@ -1,0 +1,87 @@
+/* Styles for the entire page */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+/* Main Container Styles */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+/* Input Section Styles */
+.inputSection {
+    margin-bottom: 25px;
+}
+.inputSection > label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+.inputSection > input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.inputSection > input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+/* Generate QR Code Button Styles */
+button {
+    width: 100%;
+    padding: 14px 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+/* QR Code Display Styles */
+.qr-code {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #667eea;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
